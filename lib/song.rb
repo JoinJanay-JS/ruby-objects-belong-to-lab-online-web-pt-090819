@@ -1,18 +1,8 @@
 class Song
-  attr_accessor :name, :artist
-
-  def initialize(name)
+  attr_accessor :artist, :name, :genre
+ 
+  def initialize(name, genre)
     @name = name
-  end
-
-  def artist_name
-    if @artist == nil
-      return nil
-    else
-      @artist.name
-    end
+    @genre = genre
   end
 end
-
-hotline_bling = Song.new("Hotline Bling")
-hotline_bling.artist.name
